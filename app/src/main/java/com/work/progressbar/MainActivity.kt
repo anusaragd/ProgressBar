@@ -8,9 +8,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import android.widget.ProgressBar
+import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
 import com.work.progressbar.databinding.ActivityMainBinding
-import kotlinx.coroutines.handleCoroutineException
 
 
 lateinit var progressBar : ProgressBar
@@ -72,7 +72,9 @@ class MainActivity : AppCompatActivity() {
 
         progressBar = findViewById(R.id.progressBar)
         binding.progressBar.max = 1000
-        progressBar.progressTintList = ColorStateList.valueOf(Color.GREEN)
+
+        @ColorInt val color = Color.parseColor("#3AC267")
+        progressBar.progressTintList = ColorStateList.valueOf(color)
 
         val currentProgress = 1000
 
