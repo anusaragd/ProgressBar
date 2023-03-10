@@ -25,6 +25,8 @@ class MainActivity2 : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main2)
 
+
+
         Handler().postDelayed({
             // on below line we are
             // creating a new intent
