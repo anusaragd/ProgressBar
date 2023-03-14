@@ -33,6 +33,9 @@ class MainActivity2 : AppCompatActivity() {
             val i = Intent(
                 this@MainActivity2,
                 CreatePassword::class.java
+//            val i = Intent(
+//                this@MainActivity2,
+//                PasswordLogin::class.java
 
             )
             // on below line we are
