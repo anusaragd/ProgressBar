@@ -33,6 +33,7 @@ class MainActivity2 : AppCompatActivity() {
             val i = Intent(
                 this@MainActivity2,
                 CreatePassword::class.java
+
             )
             // on below line we are
             // starting a new activity.

@@ -49,21 +49,12 @@ class MainActivity : AppCompatActivity() {
             // our current activity.
             finish()
         }, 2000)
-//        handler.
 
 
 
-//        binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        progressBar = findViewById(R.id.progressBar)
-//        binding.progressBar.max = 1000
-//
-//        val currentProgress = 1000
-//
-//        ObjectAnimator.ofInt(progressBar,"progress",currentProgress)
-//            .setDuration(2000)
-//            .start()
+
+
+
     }
 
     private fun setprogressBar(){
@@ -72,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         progressBar = findViewById(R.id.progressBar)
         binding.progressBar.max = 1000
+
 
         @ColorInt val color = Color.parseColor("#3AC267")
         progressBar.progressTintList = ColorStateList.valueOf(color)
@@ -94,6 +86,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun setprogressBarcircle()
     {
+
 
 
 
