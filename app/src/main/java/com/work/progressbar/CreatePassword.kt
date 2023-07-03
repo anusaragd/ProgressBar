@@ -3,6 +3,7 @@ package com.work.progressbar
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -77,29 +78,31 @@ class CreatePassword : AppCompatActivity() {
 
         val pinview1 = findViewById<PinView>(R.id.createpassword)
         pinview1.setText("")
-        pinview1.setPinViewEventListener(object : PinViewEventListener {
-
-            override fun onDataEntered(pinview: PinView?, fromUser: Boolean) {
-                Toast.makeText(this@CreatePassword, pinview!!.value, Toast.LENGTH_SHORT).show()
-            }
-        })
+        val pinview2 = findViewById<PinView>(R.id.cfpassword)
+        pinview2.setText("")
+//        pinview1.setPinViewEventListener(object : PinViewEventListener {
+//
+//            fun onDataEntered(pinview: PinView?, fromUser: Boolean) {
+//                Toast.makeText(this@CreatePassword, pinview!!.value, Toast.LENGTH_SHORT).show()
+//            }
+//        })
 
 
 
 //        btn_login.setOnClickListener(View.OnClickListener {
 //            if (et_username.getText().toString().equals("admin") && et_password.getText().toString()
-            if (PinView.getText().toString().equals("admin") && PinView.getText().toString()
-                    .equals("admin")
-            ) {
-                Toast.makeText(
-                    this@CreatePassword,
-                    "Username and Password is correct",
-                    Toast.LENGTH_SHORT
-                )
-                    .show()
-                val intent = Intent(this@CreatePassword, AddressActivity::class.java)
-                startActivity(intent)
-            }
+//            if (PinView.getText().toString().equals("admin") && PinView.getText().toString()
+//                    .equals("admin")
+//            ) {
+//                Toast.makeText(
+//                    this@CreatePassword,
+//                    "Username and Password is correct",
+//                    Toast.LENGTH_SHORT
+//                )
+//                    .show()
+//                val intent = Intent(this@CreatePassword, AddressActivity::class.java)
+//                startActivity(intent)
+//            }
 //            } else {
 //                Toast.makeText(this@CreatePassword, "Username or Password is incorrect", Toast.LENGTH_SHORT)
 //                    .show()
